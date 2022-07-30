@@ -1,5 +1,8 @@
 # Full-stack development of a smartphone and web application of RespirHò: a wearable system for continuous respiratory and activity monitoring
 # Intro
+
+<img align="right" src="https://user-images.githubusercontent.com/109110970/181921962-a00ab53e-bbf7-4d57-b084-4475070f08d0.jpg" width="150" height="150">
+
 This is the project I realized for my Master Thesis in Biomedical Engineering at the Politecnico Di Milano in 2021.<br>
 These applications are not intended to be downloaded here. The project has been uploaded for demonstration purposes only.
 
