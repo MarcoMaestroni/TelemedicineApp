@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(217, 231, 245);
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+
+    display: grid;
+
+    grid-template-columns: 1fr; /* 1 column */
+    grid-template-rows: 50px 1fr 100px;  /* 3 rows */
+
+    gap: 10px;
+    padding: 10px;
+
+    box-sizing: border-box;
+}
+
+.container div{
+    border: 1px solid black;
+}
+
+.header{
+    display: flex;                  
+    flex-direction: row;            
+    flex-wrap: nowrap;              
+    justify-content: space-between;
+    text-align: center; 
+    font-size: 35px;
+    color: rgb(168, 206, 245);
+    border-bottom:2px solid #0491aa;
+}
+
+.iconleft{
+    width: fit-content;
+    height: fit-content;
+}
+
+.respirho{
+    width: fit-content;
+    height: fit-content;
+}
+
+.iconright{
+    width: fit-content;
+    height: fit-content;
+}
+
+.img{
+    width: 100%;
+    height: 400px;
+    object-fit: scale-down;
+    color: #808080;
+}
+
+.footer {
+    display: inline-block;
+    text-align: center;
+    font-size: 15px;
+    color: #808080;
+}
+
+
+
+
+

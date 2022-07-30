@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "107390019239",
+    "firebase_url": "https://respirho-70008-default-rtdb.firebaseio.com",
+    "project_id": "respirho-70008",
+    "storage_bucket": "respirho-70008.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:107390019239:android:053763489de8023b5add82",
+        "android_client_info": {
+          "package_name": "com.example.respirho"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "107390019239-rbn9jl9ai46ruivdp9k8ravi5suhstmm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.respirho",
+            "certificate_hash": "66035995e9080d46e050a4fca6809ab27d9970d5"
+          }
+        },
+        {
+          "client_id": "107390019239-v2qruslmevfcaoj6ppkuu0s7q9mif9q3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.respirho",
+            "certificate_hash": "b290588403e62e4d010e4db2bef5f5b6f8fa48bc"
+          }
+        },
+        {
+          "client_id": "107390019239-v46lmffb5f974m8h7r8385eoirl4kcm4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDt92nK6qUt9LOrco-4kf3kT7zc3tGC1Cs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "107390019239-v46lmffb5f974m8h7r8385eoirl4kcm4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

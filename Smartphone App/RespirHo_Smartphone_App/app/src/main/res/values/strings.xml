@@ -1,0 +1,169 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">RespirHo</string>
+    <string name="bind_service">BIND SERVICE</string>
+    <string name="acquire_ant_channel">ACQUIRE ANT CHANNEL</string>
+    <string name="broadcast_ant_channel">BROADCAST ANT CHANNEL</string>
+    <string name="receive_message_with_address_02_00">RECEIVE MESSAGE WITH ADDRESS [02][00]</string>
+    <string name="event_handler">Event Handler</string>
+    <string name="start_acquisition">START ACQUISITION</string>
+    <string name="stop_acquisition">STOP ACQUISITION</string>
+    <string name="connect_to_ant">CONNECT TO ANT</string>
+    <string name="synchronization">Synchronization</string>
+    <string name="check">CHECK</string>
+    <string name="forgotpassworddescription">
+        Insert your email adress and click on the bottom to reset the password.\n We send you an email with the instructions to set a new password
+    </string>
+    <string name="initialization">initialization</string>
+    <string name="start">start</string>
+    <string name="check2">check</string>
+    <string name="check1">check</string>
+    <string name="check3">check</string>
+    <string name="synchronization2">synchronization</string>
+    <string name="stop">stop</string>
+    <string name="connected3">connected3</string>
+    <string name="connected1">connected1</string>
+    <string name="connected2">connected2</string>
+    <string name="_2">2</string>
+    <string name="_1">1</string>
+    <string name="_3">3</string>
+    <string name="title_activity_login">Login</string>
+    <string name="prompt_email">Username</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_register">Register</string>
+    <string name="action_help">Help</string>
+    <string name="action_log_in">Log in</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+    <string name="large_text">
+        ADDITIONAL INFO PATIENT:
+
+
+
+
+
+
+
+
+        .
+    </string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_navigation__drawer">Navigation_Drawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="dont_have_an_account">Don\'t have an account?<font color='#01C6DB'> Register </font></string>
+    <string name="already_a_member">Already a member?<font color='#01C6DB'> Log in</font></string>
+    <string name="gobacktologin">Go back to<font color='#01C6DB'> Log in</font></string>
+
+    <string name="idpatient_digits">0123456789 qwertzuiopasdfghjklyxcvbnmQWERTZUIOPASDFGHJKLYXCVBNM</string>
+    <string name="supportmail"><u><i>respirhopolimi@gmail.com</i></u></string>
+    <string name="supportmail_clean">respirhopolimi@gmail.com</string>
+
+    <string name="calibration"><u><i><b>Click here for calibration</b></i></u></string>
+    <string name="calibration_subtitle"><u><i><b>(See user guide for more)</b></i></u></string>
+
+    <string name="calibration_description">
+        1. Put ALL the three sensors on a flat surface and don\'t touch it till the LED stop blinking and stays ON.\n\n
+
+        2.Move ALL the three sensors manually as you draw an 8 in two perpendicular directions.\n\n
+
+        3.When the sensors LEDs switch OFF the calibration is done.
+    </string>
+
+    <string name="calibration_bottom">Then press the button below</string>
+
+    <string name="status_initialization">Press the bottom below to start initialize the communication</string>
+
+    <string name="userguide"><u><i>User Guide</i></u></string>
+
+
+    <!-- MESSAGES TO DISPLAY WHEN HELP BUTTON IS CLICKED -->
+    <string name="help_login">
+        In this page you have to sign in through two possible ways:\n\n
+
+        - (RECOMMENDED) clicking the <b><i>\'Sign in with google\'</i></b> dedicated button and providing access through Google Services\n\n
+
+        - inserting manually the Email and Password of your account and then press <b><i>\'LOG IN\'</i></b> button.\n\n
+
+        For both the ways, selecting the <b><i>\'Keep me logged in\'</i></b> box will save your credentials for automatic access the next times.\n
+        In each of the following pages, there will be a <b><i>\'LOG OUT\'</i></b> option to go back to the Login page.\n\n
+
+        If you are not registered yet, click on the <b><i>\'Register\'</i></b> text.\n\n
+
+        If you forgot your password, click on the <b><i>\'Forgot Password\'</i></b> text.
+    </string>
+
+    <string name="help_register">
+        In this page you have to register manually by inserting the following personal information.\n\n
+
+        Once you are done, by clicking on the <b><i>\'REGISTER\'</i></b> button you create an account.\n\n
+
+        Then, go back to Login page and insert the credentials just created and click on the <b><i>\'LOG IN\'</i></b> button.\n
+        An email will be sent instantly to your email address, you have to open it and confirm your identity.\n\n
+
+        Then, go back to Login page and by inserting your credentials and by clicking on <b><i>\'LOG IN\'</i></b> button you can have access and be redirected to the next page.
+    </string>
+
+    <string name="help_patientslist">
+        In this page you can add patients by clicking on the <font color='#00ff00'>green <font size="25">+</font></font> at the bottom.\n\n
+        Once clicked, a dialog will appear in which you have to add the ID Patient and optionally other information and the telephone number.\n\n
+
+        - By clicking on <font size="25">⋮</font> at the extreme right of the ID Patient you can edit information or delete the patient.\n\n
+
+        - By clicking on the <b><i>Person icon</i></b> at the top left of the page, or by swiping the entire page to the right, a menu with your information of access and many other functions is provided.
+    </string>
+
+    <string name="help_patientdata">
+        In this page all the information of the ID Patient added previously are visible.\n\n
+
+        - By clicking on the <font color='#0099ff'>blue telephone</font> icon you can see the telephone number added and if you want by clicking <b><i>\'CALL\'</i></b> you will be redirected to the phone service of the smartphone.\n\n
+
+        - By clicking on the <font color='#cc00ff'>violet download</font> icon you will open the archive where you can see all the previous recording files.\n
+        You can download it or delete it by clicking on the appropriate icons at the extreme right of the filename.\n\n
+
+        - The four boxes represent 4 sensors and each one can be easily activated or not by managing the switch below.\n
+        Clicking on the desired sensor you will be redirected to the following page to start initialize the communication.
+    </string>
+
+    <string name="help_demodownload">
+        In this page we will see all the following recording steps:\n\n
+
+        - initialize the communication and sensors.\n\n
+
+        - select the recording type (MANUAL or TIMER).\n\n
+
+        - add info of the recording.\n\n
+
+        - do the calibraton of the sensors.\n\n
+
+        - manage the recording in real time with the possibility to add real time updates on postures and extra info.\n\n
+
+        - download the file of the recording at the end and go to a new recording.\n\n
+
+        <u><i>WARNINGS:</i></u>\n\n
+
+        - a <font color='#00ff00'>green checkmark <font size="25"> ✓</font></font> icon will indicate the correct behaviour of the communication and the sensors.\n\n
+
+        - a <font color='#ffef00'>yellow exclamation point<font size="25"> !</font></font> icon will indicate on or more sensors do not work correctly, clicking on it more information will be provided.\n\n
+
+        - a <font color='#ff0000'>red low battery</font> icon will indicate on or more sensors need the change of the batteries, clicking on it more information will be provided.\n\n
+
+        - a <font color='#ff0000'>red cross<font size="25"> x</font></font> icon will indicate the communication is dead and it will force to go back initialize everything again.
+    </string>
+
+    <string name="help_support">
+        In this page you can download the most recent user guides by clicking on the buttons present or you can send an email to the support service by clicking on the email address or copy and paste it.
+    </string>
+
+
+</resources>

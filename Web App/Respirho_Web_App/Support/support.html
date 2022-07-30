@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./support.css">
+    <script src="https://kit.fontawesome.com/f16e85fba3.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="navdrawer" id="navdrawer">
+
+        <div class="topdiv_nd">
+
+            <div class="close_nd" onclick="closeNav()">
+                <i class="fas fa-times"></i>
+            </div>
+
+            <div class="logopoli_nd">
+                <img class="img_nd" src="/Images/logo_politecnico_milano_white.png" alt="logo poli">
+            </div>
+            
+            <div class="mail_nd" id="maildrawer"></div>
+    
+            <div class="fullname_nd" id="userdrawer"></div>
+
+        </div>
+
+        <div class="bottomdiv_nd">
+            <ul>
+                <li class="home_nd">
+                    <i class="fas fa-home"></i>
+                    <a class="home_text_nd" onclick="location.href='/PatientsList/patientslist.html'">Home</a>
+                </li>
+                <br>
+
+                <li class="support_nd">
+                    <i class="fas fa-info-circle"></i>
+                    <a class="support_text__nd" onclick="closeNav()">Support</a>
+                </li>
+                <br>
+
+                <li class="logout_nd" id="logout_nd">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <a class="logout_text_nd">Log Out</a>
+                </li>
+                <br>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="container" id="container">
+
+        <div class="header">
+            <div class="iconleft" id="iconleft" onclick="openNav()">
+                <i class="fas fa-user"></i>
+            </div>
+            <div class="respirho">RespirHo</div>
+            <div class="iconright">
+                <div class="tooltip">
+                    <span class="tooltiptext">
+                        In this page it's possible to download the user guide of the application or to read the support mail.
+                    </span>
+                    <i class="fas fa-info-circle"></i>
+                </div>
+            </div>
+        </div>
+    
+        <div class="main">
+            <div class="support_title">Support</div>
+
+            <div class="userguides">
+                <br>
+                <div id="userguides_title">User Guides</div>
+                <br>
+                <p id="userguide_descr">Clicking on the following buttons you can download the app user guide:</p>
+                
+                <button id="userguidebutton">DOWNLOAD APP USER GUIDE</button>
+                <br><br>
+
+                <div id="aboutus_title">About Us</div>
+                <br>
+                <p id="aboutus_descr">Support mail:</p>
+                
+                <p id="mailsupport"><u><i>respirhopolimi@gmail.com</u></i></p>
+            </div>        
+        </div>
+
+    </div>
+
+    <script type="module" src="/Functions/firebasesupport.js"></script> 
+
+    <script src="/Functions/shownavdrawer.js"></script>
+</body>
+</html>

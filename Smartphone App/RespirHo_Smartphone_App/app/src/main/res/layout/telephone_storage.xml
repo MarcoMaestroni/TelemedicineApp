@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_telephone_download"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- MAIL AND DOWNLOAD -->
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="116dp"
+        android:layout_height="100dp"
+        android:background="@drawable/layoutroundedcorners">
+
+        <ImageButton
+            android:id="@+id/telephone"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:adjustViewBounds="true"
+            android:background="#00FFFFFF"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:tint="#53B8FB"
+            app:srcCompat="@drawable/ic_telephone_foreground" />
+
+        <ImageButton
+            android:id="@+id/storage"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:adjustViewBounds="true"
+            android:background="#00FFFFFF"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:tint="#9C27B0"
+            app:srcCompat="@drawable/ic_download_foreground" />
+    </RelativeLayout>
+</LinearLayout>

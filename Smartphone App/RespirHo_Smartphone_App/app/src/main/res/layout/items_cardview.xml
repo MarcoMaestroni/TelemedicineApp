@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:padding="5dp">
+
+    <RelativeLayout
+        android:id="@+id/item_cardview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="2dp"
+        android:background="@drawable/layoutroundedcorners"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/card"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:text="ID Patient 1"
+            android:textColor="@android:color/black"
+            android:textSize="30dp"
+            android:textStyle="bold"/>
+
+        <RelativeLayout
+            android:layout_width="170dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="30dp">
+
+            <ImageButton
+                android:id="@+id/error"
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:adjustViewBounds="true"
+                android:background="#00FFFFFF"
+                android:tint="#FF0000"
+                android:clickable="true"
+                android:visibility="gone"
+                app:srcCompat="@drawable/ic_cancel_foreground" />
+
+            <ImageButton
+                android:id="@+id/exclamation_point"
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:adjustViewBounds="true"
+                android:layout_centerInParent="true"
+                android:background="#00FFFFFF"
+                android:tint="#FFEB3B"
+                android:clickable="true"
+                android:visibility="gone"
+                app:srcCompat="@drawable/ic_exclamation_point_round_foreground" />
+
+            <ImageButton
+                android:id="@+id/checkmark"
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:adjustViewBounds="true"
+                android:background="#00FFFFFF"
+                android:tint="#53FB5A"
+                android:clickable="true"
+                android:visibility="gone"
+                app:srcCompat="@drawable/ic_checkmark_foreground" />
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/showpopup"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            app:srcCompat="@drawable/ic_popup"
+            android:background="#00FFFFFF" />
+    </RelativeLayout>
+</LinearLayout>

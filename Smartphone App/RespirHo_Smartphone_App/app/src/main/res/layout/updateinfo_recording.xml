@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DemoDownload">
+
+    <!-- SENSOR -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:background="@drawable/layoutroundedcornerssensor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:id="@+id/updateinfo_recording_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:paddingTop="5dp"
+            android:text="Update info recording"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textColor="@android:color/white" />
+
+        <!-- POSTURE BUTTONS -->
+        <RadioGroup
+            android:id="@+id/posture_buttons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <RadioButton
+                android:id="@+id/none_posture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="None"
+                android:checked="true"
+                android:padding="5dp"
+                android:textColor="@android:color/white"
+                android:buttonTint="@android:color/white"/>
+
+            <RadioButton
+                android:id="@+id/prone_posture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Prone"
+                android:padding="5dp"
+                android:textColor="@android:color/white"
+                android:buttonTint="@android:color/white"/>
+
+            <RadioButton
+                android:id="@+id/supine_posture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Supine"
+                android:padding="5dp"
+                android:textColor="@android:color/white"
+                android:buttonTint="@android:color/white"/>
+
+            <RadioButton
+                android:id="@+id/thirtydegrees_posture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30°"
+                android:padding="5dp"
+                android:textColor="@android:color/white"
+                android:buttonTint="@android:color/white"/>
+
+        </RadioGroup>
+
+        <!-- ADD RECORDING INFO -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layout_insert_addinforec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Add recording info (optional)"
+            android:textColorHint="@android:color/white"
+            android:layout_margin="5dp"
+            app:counterEnabled="true"
+            app:counterMaxLength="100"
+            app:counterTextColor="@android:color/white"
+            android:visibility="visible"
+            app:helperTextTextAppearance="@style/HelperTextAppearance">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/insert_addinforec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="100"
+                android:maxLines="3"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                android:visibility="visible"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@android:color/white"
+                android:textColorHighlight="@android:color/white"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="5dp"
+            android:text="Press the bottom below to update info recording"/>
+
+        <Button
+            android:id="@+id/updateinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="update info"
+            android:layout_marginBottom="10dp"
+            android:clickable="true"
+            android:enabled="true"/>
+
+        <!-- INFO RECORDING TITLE -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:textColor="@android:color/white"
+            android:text="Info recording:"
+            android:layout_margin="5dp"
+            android:textSize="20dp"/>
+
+        <!-- INFO RECORDING -->
+        <TextView
+            android:id="@+id/inforecording"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:textColor="@android:color/white"
+            android:layout_margin="5dp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

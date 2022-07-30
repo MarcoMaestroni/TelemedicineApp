@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DemoDownload">
+
+    <!-- CALIBRATION -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/layoutroundedcornerssensor"
+        android:rowCount="6"
+        android:columnCount="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <!-- TITLE -->
+        <TextView
+            android:id="@+id/calibration_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:paddingTop="5dp"
+            android:text="Calibration"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textColor="@android:color/white"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_columnWeight="1"/>
+
+        <!-- SUBTITLE -->
+        <TextView
+            android:id="@+id/calibration_subtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:paddingTop="5dp"
+            android:text="@string/calibration_subtitle"
+            android:textAlignment="center"
+            android:textSize="15dp"
+            android:textColor="@android:color/white"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:clickable="true"
+            android:enabled="true"/>
+
+        <!-- DESCRIPTION -->
+        <TextView
+            android:id="@+id/calibration_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:paddingTop="5dp"
+            android:text="@string/calibration_description"
+            android:textAlignment="textStart"
+            android:textSize="15dp"
+            android:textColor="@android:color/white"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:layout_columnWeight="1"/>
+
+        <!-- BOTTOM -->
+        <TextView
+            android:id="@+id/calibration_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:paddingTop="5dp"
+            android:text="@string/calibration_bottom"
+            android:textAlignment="center"
+            android:textSize="15dp"
+            android:textColor="@android:color/white"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:layout_columnWeight="1"/>
+
+        <!-- END CALIBRATION -->
+        <Button
+            android:id="@+id/endcalibration_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="End calibration and go back"
+            android:clickable="true"
+            android:layout_margin="5dp"
+            android:layout_row="5"
+            android:layout_column="0"
+            android:layout_columnWeight="1"/>
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

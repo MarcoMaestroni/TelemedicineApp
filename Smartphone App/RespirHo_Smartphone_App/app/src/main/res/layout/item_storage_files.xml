@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:padding="0dp">
+
+    <RelativeLayout
+        android:id="@+id/item_storage_files"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="2dp"
+        android:gravity="center_vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="70dp">
+
+            <TextView
+                android:id="@+id/text_item_storage_files"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="Mario R - 2021-09-18T18:51:05,316.txt"
+                android:textColor="@android:color/black"
+                android:textSize="15dp"
+                android:textStyle="italic"/>
+        </RelativeLayout>
+
+        <!-- DOWNLOAD FILE STORAGE -->
+        <RelativeLayout
+            android:id="@+id/layout_download_item_storage_files"
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="35dp">
+
+            <!-- DOWNLOAD BUTTON -->
+            <ImageButton
+                android:id="@+id/download_item_storage_files"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                app:srcCompat="@drawable/ic_downloadfile_24"
+                android:background="#00FFFFFF" />
+        </RelativeLayout>
+
+        <!-- DELETE FILE STORAGE -->
+        <RelativeLayout
+            android:id="@+id/layout_delete_item_storage_files"
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true">
+
+            <!-- DOWNLOAD BUTTON -->
+            <ImageButton
+                android:id="@+id/delete_item_storage_files"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleY="0.8"
+                android:scaleX="0.8"
+                android:layout_centerInParent="true"
+                app:srcCompat="@drawable/ic_delete"
+                android:background="#00FFFFFF" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/addpatient_dialog">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/layoutroundedcorners"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/patienticon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/ic_addpatient_icon"/>
+
+        <TextView
+            android:id="@+id/titleadddialog"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Add new patient"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layout_insert_idpatient"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ID Patient"
+            app:counterEnabled="true"
+            app:counterMaxLength="10"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/insert_idpatient"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="10"
+                android:ems="10"
+                android:inputType="text"
+                android:digits="@string/idpatient_digits"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layout_insert_infopatient"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Info (optional)"
+            app:counterEnabled="true"
+            app:counterMaxLength="200"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/insert_infopatient"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="200"
+                android:maxLines="6"
+                android:ems="10"
+                android:inputType="textMultiLine"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layout_insert_telephonepatient"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Telephone Number (optional)"
+            app:counterEnabled="true"
+            app:counterMaxLength="50"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/insert_telephonepatient"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="20"
+                android:ems="10"
+                android:inputType="text|phone"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_bottombar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp">
+
+            <Button
+                android:id="@+id/addbuttondialog"
+                android:layout_width="80dp"
+                android:layout_height="35dp"
+                android:text="Add"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="50dp"
+                android:clickable="true"
+                android:enabled="true"
+                android:background="#4D4C8CBF"
+                android:textColor="@android:color/white" />
+
+            <!-- EDIT button to change info and telepgone, ID fixed -->
+            <Button
+                android:id="@+id/editbuttondialog"
+                android:layout_width="80dp"
+                android:layout_height="35dp"
+                android:text="Edit"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="50dp"
+                android:visibility="gone"
+                android:background="#4D4C8CBF"
+                android:textColor="@android:color/white" />
+
+            <ProgressBar
+                android:id="@+id/progressbar_addnewpatient"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:layout_centerInParent="true"/>
+
+            <Button
+                android:id="@+id/cancelbuttondialog"
+                android:layout_width="80dp"
+                android:layout_height="35dp"
+                android:text="Cancel"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="50dp"
+                android:clickable="true"
+                android:enabled="true"
+                android:background="#4D4C8CBF"
+                android:textColor="@android:color/white" />
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

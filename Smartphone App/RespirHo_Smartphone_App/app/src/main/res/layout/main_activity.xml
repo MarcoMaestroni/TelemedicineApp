@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--android:background="#FFEB3B" -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/imageVie"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFEB3B"
+    android:backgroundTint="@color/colorPrimary"
+    android:clickable="false"
+    android:onClick="onClick"
+    android:visibility="visible"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="173dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="119dp"
+        android:layout_marginEnd="119dp"
+        android:layout_marginBottom="34dp"
+        android:onClick="onClick"
+        android:text="@string/start"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/stop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/connect1"
+        android:layout_width="85dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="56dp"
+        android:text="1"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/initialization" />
+
+    <Button
+        android:id="@+id/connect2"
+        android:layout_width="85dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="35dp"
+        android:text="@string/_2"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toStartOf="@+id/connect3"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/connect1"
+        app:layout_constraintTop_toBottomOf="@+id/initialization" />
+
+    <Button
+        android:id="@+id/connect3"
+        android:layout_width="85dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="44dp"
+        android:text="@string/_3"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/initialization" />
+
+    <Button
+        android:id="@+id/check1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="52dp"
+        android:onClick="onClick"
+        android:text="@string/check3"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/connect1" />
+
+    <Button
+        android:id="@+id/check2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="23dp"
+        android:onClick="onClick"
+        android:text="@string/check2"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/check3"
+        app:layout_constraintTop_toBottomOf="@+id/connect2" />
+
+    <Button
+        android:id="@+id/check3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="53dp"
+        android:layout_marginEnd="30dp"
+        android:onClick="onClick"
+        android:text="@string/check3"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/connect3" />
+
+    <ImageView
+        android:id="@+id/true1"
+        android:layout_width="52dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="52dp"
+        android:contentDescription="@string/connected1"
+        android:onClick="onClick"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/synchronization"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/check1"
+        app:layout_constraintVertical_bias="0.228"
+        app:srcCompat="@android:drawable/checkbox_on_background" />
+
+    <ImageView
+        android:id="@+id/true2"
+        android:layout_width="52dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="70dp"
+        android:contentDescription="@string/connected2"
+        android:onClick="onClick"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/synchronization"
+        app:layout_constraintEnd_toStartOf="@+id/true3"
+        app:layout_constraintTop_toBottomOf="@+id/check2"
+        app:srcCompat="@android:drawable/checkbox_on_background" />
+
+    <ImageView
+        android:id="@+id/true3"
+        android:layout_width="52dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="37dp"
+        android:contentDescription="@string/connected3"
+        android:onClick="onClick"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/synchronization"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/check3"
+        app:layout_constraintVertical_bias="0.696"
+        app:srcCompat="@android:drawable/checkbox_on_background" />
+
+    <Button
+        android:id="@+id/initialization"
+        android:layout_width="317dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="47dp"
+        android:layout_marginBottom="56dp"
+        android:onClick="onClick"
+        android:text="@string/initialization"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/connect3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="5"
+        android:layout_rowWeight="1"
+        android:layout_column="0"
+        android:layout_columnWeight="1"
+        android:layout_margin="5dp"
+        android:text="Start recording"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/connect2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/initialization" />
+
+    <Button
+        android:id="@+id/stop"
+        android:layout_width="173dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginEnd="119dp"
+        android:layout_marginBottom="50dp"
+        android:onClick="onClick"
+        android:text="@string/stop"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/synchronization"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="33dp"
+        android:text="@string/synchronization2"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/start"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

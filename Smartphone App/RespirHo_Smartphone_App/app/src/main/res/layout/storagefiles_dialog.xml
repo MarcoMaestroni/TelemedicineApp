@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/storage_files">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/layoutroundedcorners"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/patienticon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/ic_baseline_archive_64"/>
+
+        <TextView
+            android:id="@+id/title_storage_files"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Archive"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/status_storage_files"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="No items in the archive"
+            android:textSize="20dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:visibility="gone"/>
+
+        <!-- RECYCLER VIEW for files from firebase-->
+        <RelativeLayout
+            android:id="@+id/layout_recyclerView_storage_files"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView_storage_files"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="vertical" />
+        </RelativeLayout>
+
+        <!--BOTTOM BAR -->
+        <RelativeLayout
+            android:id="@+id/layout_bottombar_storage_files"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp">
+
+            <!-- UPDATE BUTTON-->
+            <Button
+                android:id="@+id/update_storage_files"
+                android:layout_width="80dp"
+                android:layout_height="35dp"
+                android:text="Update"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="50dp"
+                android:clickable="true"
+                android:enabled="true"
+                android:background="#4D4C8CBF"
+                android:textColor="@android:color/white" />
+
+            <ProgressBar
+                android:id="@+id/progressbar_storage_files"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:layout_centerInParent="true"/>
+
+            <Button
+                android:id="@+id/cancel_storage_files"
+                android:layout_width="80dp"
+                android:layout_height="35dp"
+                android:text="Close"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="50dp"
+                android:clickable="true"
+                android:enabled="true"
+                android:background="#4D4C8CBF"
+                android:textColor="@android:color/white" />
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

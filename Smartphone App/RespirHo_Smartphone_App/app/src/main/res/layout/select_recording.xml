@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DemoDownload">
+
+    <!-- SENSOR -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/layoutroundedcornerssensor"
+        android:rowCount="6"
+        android:columnCount="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <!-- SENSOR DATA NAME -->
+        <TextView
+            android:id="@+id/sensordata_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:paddingTop="5dp"
+            android:text="Breathing and activity"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textColor="@android:color/white"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_columnWeight="1"/>
+
+        <TextView
+            android:id="@+id/select_recording_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:paddingTop="5dp"
+            android:text="Select the recording type"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textColor="@android:color/white"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"/>
+
+        <!-- TIMER RECORDING -->
+        <Button
+            android:id="@+id/timerrecordingbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Timer Recording"
+            android:clickable="true"
+            android:layout_margin="5dp"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:layout_columnWeight="1"/>
+
+        <!-- MANUAL RECORDING -->
+        <Button
+            android:id="@+id/manualrecordingbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Manual Recording"
+            android:clickable="true"
+            android:layout_margin="5dp"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:layout_columnWeight="1"/>
+
+        <!-- ADD RECORDING INFO -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layout_insert_setinforec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_row="4"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:hint="Set recording info (optional)"
+            android:textColorHint="@android:color/white"
+            android:layout_margin="5dp"
+            app:counterEnabled="true"
+            app:counterMaxLength="100"
+            app:counterTextColor="@android:color/white"
+            android:visibility="visible"
+            app:helperTextTextAppearance="@style/HelperTextAppearance">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/insert_setinforec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="100"
+                android:maxLines="3"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                android:visibility="visible"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@android:color/white"
+                android:textColorHighlight="@android:color/white"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- CALIBRATION -->
+        <TextView
+            android:id="@+id/clickhereforcalibration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:text="@string/calibration"
+            android:clickable="true"
+            android:enabled="true"
+            android:layout_margin="5dp"
+            android:layout_row="5"
+            android:layout_column="0"
+            android:layout_columnWeight="1"/>
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

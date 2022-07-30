@@ -1,0 +1,236 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(217, 231, 245);
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+
+    display: grid;
+
+    grid-template-columns: 1fr; /* 1 column */
+    grid-template-rows: 50px 1fr 100px;  /* 3 rows */
+
+    gap: 10px;
+    padding: 10px;
+
+    box-sizing: border-box;
+
+    z-index: 1;
+    overflow: auto;
+}
+
+/*
+.container div{
+    border: 1px solid black;
+}
+*/
+
+.header{
+    display: flex;                  
+    flex-direction: row;            
+    flex-wrap: nowrap;              
+    justify-content: space-between;
+    text-align: center; 
+    font-size: 35px;
+    color: rgb(168, 206, 245);
+    border-bottom:2px solid #0491aa;
+}
+
+.iconleft{
+    width: fit-content;
+    height: fit-content;
+    cursor: pointer;
+}
+
+.respirho{
+    width: fit-content;
+    height: fit-content;
+}
+
+.iconright{
+    width: fit-content;
+    height: fit-content;  
+}
+
+.tooltip{
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext{
+    visibility: hidden;
+    width: 400px;
+    background-color: rgb(168, 206, 245);;
+    color: white;
+    text-align: left;
+    padding: 5px;
+    font-size: 15px;
+    position: absolute;
+    z-index: 1;
+    top: 20px;
+    right: 105%;
+}
+
+.tooltip:hover .tooltiptext{
+    visibility: visible;
+}
+
+.aboutus{
+    font-size: 25px;
+}
+
+.text{
+    font-size: 20px;
+    text-align: start;
+    padding: 10px;
+}
+
+/* PATIENT DATA*/
+.patientdata_title{
+    font-size: 35px;
+    text-align: center;
+    color: #808080;
+}
+
+.patientdata_idpatient_title{
+    font-size: 30px;
+    text-align: center;
+    color: #808080;
+}
+
+
+.main{
+    display: flex;                  
+    flex-direction: column;            
+    flex-wrap: nowrap;              
+    justify-content: start;
+    text-align: start;
+    border-radius: 3px;
+	padding: 15px;
+}
+
+.list-view .view_item {
+	background: rgb(247,251,255);
+	border: 5px solid rgb(103, 177, 238);
+    border-radius: 1em;
+	margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 20%;
+    margin-right: 20%;
+	padding: 5px 15px;
+	display: flex;
+	align-items: center;
+    cursor: pointer;
+    
+    font-size: 25px;
+    color: black;
+}
+
+.list-view .view_item:last-child{
+	margin-bottom: 10;
+}
+
+.list-view .view_item:hover{
+    background-color: rgb(201, 228, 250);
+}
+
+.list-view .view_item.view_item:active{
+    background-color: rgb(148, 228, 250);
+}
+
+
+/* end PATIENTS DATA*/
+
+/* NAVIGATION DRAWER*/
+.navdrawer{
+    position: fixed;
+    width: 0;
+    height: 100%;
+    transition: .3s;
+    z-index: 10;
+    background:rgb(217, 231, 245) ;
+
+    padding-left: -15px;
+    box-sizing: border-box;
+    border-right: 2px solid rgb(168, 206, 245);
+    overflow-x: hidden;
+    transition: .5s;
+}
+
+.navdrawer ul{
+    margin: 0px;
+    padding: 10px;
+}
+
+.navdrawer ul li{
+    list-style: none;
+    font-size: 20px;
+    color: rgb(168, 206, 245);
+    padding: 10px;
+    cursor: pointer;
+}
+
+.navdrawer ul li:hover{
+    background:rgb(201, 228, 250);
+}
+
+.topdiv_nd{
+    display: flex;                  
+    flex-direction: column;            
+    flex-wrap: nowrap;              
+    justify-content: space-between;
+    text-align: center; 
+    font-size: 35px;
+    color: rgb(168, 206, 245);
+    border-bottom:2px solid rgb(168, 206, 245);
+    gap: 5px;
+}
+
+.close_nd{
+    position: absolute;
+    right: 15px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.close_nd:hover{
+    cursor: pointer;
+}
+
+.img_nd{
+    width: 100%;
+    height: 150px;
+    object-fit: scale-down;
+}
+
+.mail_nd{
+    font-size: 20px;
+}
+
+.fullname_nd{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.bottomdiv a:hover, a:visited, a:link, a:active{
+    text-decoration: none;
+    color: rgb(168, 206, 245);
+}
+
+.list{
+    text-align: start;
+}
+
+/* END NAVIGATION DRAWER*/
+
+
+
+
+
+
+
+

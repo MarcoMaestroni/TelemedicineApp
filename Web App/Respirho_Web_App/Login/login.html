@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./login.css">
+    <script src="https://kit.fontawesome.com/f16e85fba3.js" crossorigin="anonymous"></script>
+    <!-- GOOGLE SIGN IN 
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <meta name="google-signin-client_id" content="107390019239-v46lmffb5f974m8h7r8385eoirl4kcm4.apps.googleusercontent.com">
+    -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container" id="container">
+
+        <div class="header">
+            <div class="iconleft"> 
+                <i class="fas fa-user"></i>
+            </div>
+            <div class="respirho" >RespirHo</div>
+            <div class="iconright">
+                <div class="tooltip">
+                    <span class="tooltiptext">
+                        In this page you have to sign in through two possible ways:<br><br>
+
+                        - (RECOMMENDED) clicking the <b><i>Sign in with google</i></b> dedicated button and providing access through Google Services<br><br>
+
+                        - inserting manually the Email and Password of your account and then press <b><i>LOG IN</i></b> button.<br><br>
+
+                        For both the ways, selecting the <b><i>Keep me logged in</i></b> box will save your credentials for automatic access the next times.<br>
+                        In each of the following pages, there will be a <b><i>LOG OUT</i></b> option to go back to the Login page.<br><br>
+
+                        If you forgot your password, click on the <b><i>Forgot Password</i></b> text.
+                    </span>
+                    <i class="fas fa-info-circle"></i>
+                </div>
+            </div>
+        </div>
+        
+        <div class="main">
+            <div class="login">Login</div>
+            <br>
+            
+            <form id="loginForm" method="POST">
+
+                <div class="email">
+                    <label for="email">Email</label>
+                    <br>
+                    <input type="email" id="email" name="email" placeholder="Insert your email" required>
+                    <br>
+                </div>
+
+                <div class="password">
+                    <label for="password">Password</label>
+                    <br>
+                    <input type="password" id="password" name="password" placeholder="Insert your password" required/>
+                    <i class="fas fa-eye" aria-hidden="true" id="togglePassword"></i>
+                    <br>  
+                </div>
+               
+                <div class="rememberme">
+                    <input type="checkbox" checked="checked" name="remember"> 
+                    Keep me logged in 
+                </div>
+                <br><br>
+
+                <div class="loginbutton">
+                    <button type="submit" id="loginbutton">LOG IN</button>
+                </div>
+
+                <div class="forgotpassword">
+                    <a href="/ForgotPassword/forgotpassword.html">Forgot password?</a>
+                </div>
+                <br>
+
+                <div class="signinwithgoogle">
+                    <img class="google" id="signinwithgoogle"
+                    src="/Images/btn_google_signin_light_normal_web.png" 
+                    alt="sign in with google">    
+                </div>
+                <br><br><br>
+                
+                <!-- DON'T SHOW REGISTER
+                <div class="register">
+                    <p>Don't have an account? <a href="/Register/register.html">Register</a></p>
+                </div>
+                -->
+
+            </form> 
+        </div>
+    </div>
+</body>
+
+<script type="module" src="/Functions/firebaseinitialization.js"></script>
+<script src="/Functions/togglepassword.js"></script>
+
+</html>
+
+

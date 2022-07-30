@@ -1,0 +1,185 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(217, 231, 245);
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+
+    display: grid;
+
+    grid-template-columns: 1fr; /* 1 column */
+    grid-template-rows: 50px 1fr 100px;  /* 3 rows */
+
+    gap: 10px;
+    padding: 10px;
+
+    box-sizing: border-box;
+
+    z-index: 1;
+    overflow: auto;
+}
+/*
+.container div{
+    border: 1px solid black;
+}
+*/
+
+.header{
+    display: flex;                  
+    flex-direction: row;            
+    flex-wrap: nowrap;              
+    justify-content: space-between;
+    text-align: center; 
+    font-size: 35px;
+    color: rgb(168, 206, 245);
+    border-bottom:2px solid #0491aa;
+}
+
+.iconleft{
+    width: fit-content;
+    height: fit-content;
+    visibility: hidden;
+}
+
+.respirho{
+    width: fit-content;
+    height: fit-content;
+}
+
+.iconright{
+    width: fit-content;
+    height: fit-content;  
+}
+
+.tooltip{
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext{
+    visibility: hidden;
+    width: 400px;
+    background-color: rgb(168, 206, 245);;
+    color: white;
+    text-align: left;
+    padding: 5px;
+    font-size: 15px;
+    position: absolute;
+    z-index: 1;
+    top: 20px;
+    right: 105%;
+}
+
+.tooltip:hover .tooltiptext{
+    visibility: visible;
+}
+
+.main{
+    display: flex;                  
+    flex-direction: column;            
+    flex-wrap: nowrap;              
+    justify-content: start;
+    color: #808080;
+}
+
+.login{
+    text-align: center;
+    font-size: 25px;
+}
+
+form{
+    padding-left: 30%;
+    padding-right: 30%;
+    padding-top: 20px;
+}
+
+.password{
+    position: relative;
+}
+
+.password i{
+    position: absolute;
+    right: 5px;
+    bottom: 20px;
+    color: grey;
+    cursor: pointer;
+}
+
+.forgotpassword{
+    text-align: end;
+}
+
+.signinwithgoogle{
+    text-align: center;
+}
+
+.google{
+    width: fit-content;
+    height: fit-content;
+    object-fit: scale-down;
+    cursor: pointer;
+}
+
+.register{
+    text-align: center;
+}
+
+.container a:link {
+    color: #0491aa;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.container a:visited {
+    color: #0491aa;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.container a:hover {
+    color: rgb(114, 145, 211);
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.container a:active {
+    color: rgb(81, 169, 190);
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+input[type=text],input[type=password],input[type=email]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: rgb(76,140,191);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+  
+button:hover {
+    opacity: 0.8;
+}
+
+
+
+
+
+
+
+
+

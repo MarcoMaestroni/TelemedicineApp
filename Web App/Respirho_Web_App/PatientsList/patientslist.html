@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./patientslist.css">
+    <script src="https://kit.fontawesome.com/f16e85fba3.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="navdrawer" id="navdrawer">
+
+        <div class="topdiv_nd">
+
+            <div class="close_nd" onclick="closeNav()">
+                <i class="fas fa-times"></i>
+            </div>
+
+            <div class="logopoli_nd">
+                <img class="img_nd" src="/Images/logo_politecnico_milano_white.png" alt="logo poli">
+            </div>
+            
+            <div class="mail_nd" id="maildrawer"></div>
+    
+            <div class="fullname_nd" id="userdrawer"></div>
+
+        </div>
+
+        <div class="bottomdiv_nd">
+            <ul>
+                <li class="home_nd">
+                    <i class="fas fa-home"></i>
+                    <a class="home_text_nd" onclick="closeNav()">Home</a>
+                </li>
+                <br>
+
+                <li class="support_nd">
+                    <i class="fas fa-info-circle"></i>
+                    <a class="support_text__nd" onclick="location.href='/Support/support.html'">Support</a>
+                </li>
+                <br>
+
+                <li class="logout_nd" id="logout_nd">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <a class="logout_text_nd">Log Out</a>
+                </li>
+                <br>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="container" id="container">
+
+        <div class="header">
+            <div class="iconleft" id="iconleft" onclick="openNav()">
+                <i class="fas fa-user"></i>
+            </div>
+            <div class="respirho">RespirHo</div>
+            <div class="iconright">
+                <div class="tooltip">
+                    <span class="tooltiptext">
+                        In this page you can see the patients name for whom at least one acquisition has been made.<br>
+                        Clicking on the name, you'll be redirected to the patient page with their files.
+                    </span>
+                    <i class="fas fa-info-circle"></i>
+                </div>
+            </div>
+        </div>
+    
+        <div class="main">
+            <div class="patientslist_title">Patients List</div>
+
+            <div class="patientslist">
+                <div class="view_wrap list-view" id="patientslist" style="display: block;">
+                    <!-- HERE WE WILL INFLATE THE PATIENTS FROM firebasepatientslist.js-->
+		        </div>
+            </div>
+        
+        </div>
+
+    </div>
+
+    <script type="module" src="/Functions/firebaseinitialization.js"></script> 
+    <script type="module" src="/Functions/firebasepatientslist.js"></script>
+
+    <script src="/Functions/shownavdrawer.js"></script>
+</body>
+</html>

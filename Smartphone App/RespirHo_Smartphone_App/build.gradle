@@ -1,0 +1,26 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    repositories {
+        google()
+        jcenter()
+        maven { url "https://chaquo.com/maven" } //chaquopy
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:4.2.0'
+        //DEFAULT: classpath 'com.android.tools.build:gradle:4.2.0'
+        classpath 'com.google.gms:google-services:4.3.10'
+        classpath "com.chaquo.python:gradle:9.1.0" //chaquopy
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+

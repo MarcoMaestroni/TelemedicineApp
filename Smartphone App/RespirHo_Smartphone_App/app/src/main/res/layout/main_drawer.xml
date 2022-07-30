@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#DCE6F2">
+
+    <RelativeLayout
+        android:id="@+id/toplayout"
+        android:layout_width="match_parent"
+        android:layout_height="240dp">
+
+        <!-- LOGO -->
+        <ImageView
+            android:id="@+id/logodrawer"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_margin="16dp"
+            android:src="@drawable/logo_politecnico_milano"/>
+
+        <!-- MAIL DOCTOR -->
+        <TextView
+            android:id="@+id/drawermail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logodrawer"
+            android:text=""
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:textAlignment="center"/>
+
+        <!-- FULL NAME DOCTOR -->
+        <TextView
+            android:id="@+id/drawerfullname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/drawermail"
+            android:text=""
+            android:layout_marginTop="16dp"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:textAlignment="center"/>
+
+        <!-- HORIZONTAL VIEW -->
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_alignParentBottom="true"
+            android:background="#664C8CBF"
+            android:backgroundTint="#664C8CBF" />
+
+        <!-- VERTICAL VIEW TOP-->
+        <View
+            android:id="@+id/view2"
+            android:layout_width="4dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="#664C8CBF"
+            android:backgroundTint="#664C8CBF" />
+
+        <ImageButton
+            android:id="@+id/arrowback"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="#00FFFFFF"
+            android:tint="#664C8CBF"
+            app:srcCompat="@drawable/ic_arrow_back" />
+    </RelativeLayout>
+
+    <!-- LIST -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- VERTICAL VIEW BOTTOM -->
+        <View
+            android:id="@+id/view3"
+            android:layout_width="4dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="#664C8CBF"
+            android:backgroundTint="#664C8CBF" />
+
+        <!-- HOME -->
+        <RelativeLayout
+            android:id="@+id/drawer_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginStart="60dp"
+                android:gravity="center"
+                android:padding="12dp"
+                android:text="Home" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                app:srcCompat="@drawable/ic_home"
+                app:tint="#664C8CBF" />
+        </RelativeLayout>
+
+        <!-- ABOUT US -->
+        <RelativeLayout
+            android:id="@+id/drawer_support"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/drawer_home"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:gravity="center"
+                android:padding="12dp"
+                android:text="Support"
+                android:layout_marginStart="60dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                app:srcCompat="@drawable/ic_info"
+                app:tint="#664C8CBF" />
+        </RelativeLayout>
+
+        <!-- LOGOUT -->
+        <RelativeLayout
+            android:id="@+id/drawer_logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/drawer_closeapp"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:gravity="center"
+                android:padding="12dp"
+                android:text="Log out"
+                android:layout_marginStart="60dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                app:srcCompat="@drawable/ic_logout"
+                app:tint="#664C8CBF" />
+        </RelativeLayout>
+
+        <!-- CLOSE APP -->
+        <RelativeLayout
+            android:id="@+id/drawer_closeapp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:gravity="center"
+                android:padding="12dp"
+                android:text="Close app"
+                android:layout_marginStart="60dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                app:srcCompat="@drawable/ic_closeapp_x"
+                app:tint="#664C8CBF" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>
