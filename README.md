@@ -7,7 +7,8 @@ This is the project I realized for my Master Thesis in Biomedical Engineering at
 This work was developed as part of a research project aimed at realising a continuous, real-time acquisition within a telemedicine platform to be used in clinical practice and in particular in respiratory medicine.<br>
 NOTE: These applications are not intended to be downloaded here. The project has been uploaded for demonstration purposes only.
 # Publications
-This smartphone app has been part of a research project led by 
+This smartphone app features in the following scientific paper on the **Biocybernetics and Biomedical Engineering** journal:<br>
+[Validation of a body sensor network for cardiorespiratory monitoring during dynamic activities](https://www.sciencedirect.com/science/article/pii/S0208521624000676)
 
 # Index
 - [Telemedicine architecture](#telemedicine-architecture) 
