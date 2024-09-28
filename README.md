@@ -3,8 +3,11 @@
 
 <img align="right" src="https://user-images.githubusercontent.com/109110970/181921962-a00ab53e-bbf7-4d57-b084-4475070f08d0.jpg" width="150" height="150">
 
-This is the project I realized for my Master Thesis in Biomedical Engineering at the Politecnico Di Milano in 2021.<br>
-These applications are not intended to be downloaded here. The project has been uploaded for demonstration purposes only.
+This is the project I realized for my Master Thesis in Biomedical Engineering at the Politecnico Di Milano in 2021.
+This work was developed as part of a research project aimed at realising a continuous, real-time acquisition within a telemedicine platform to be used in clinical practice and in particular in respiratory medicine.<br>
+NOTE: These applications are not intended to be downloaded here. The project has been uploaded for demonstration purposes only.
+# Publications
+This smartphone app has been part of a research project led by 
 
 # Index
 - [Telemedicine architecture](#telemedicine-architecture) 
